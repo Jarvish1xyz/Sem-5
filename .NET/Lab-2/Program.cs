@@ -252,7 +252,7 @@
         static void Main(string[] args)
         {
             int c;
-            while(true)
+            while (true)
             {
                 Console.WriteLine("1. Input Array\r\n2. Display Sum\r\n3. Count Odd and Even\r\n4. Find Second Largest\r\n5. Exit");
                 Console.Write("Enter your option: ");
@@ -263,7 +263,7 @@
                 int max = int.MinValue;
                 int secondMax = int.MinValue;
 
-                switch(c)
+                switch (c)
                 {
                     case 1:
                         Console.Write("Enter n: ");
@@ -280,7 +280,7 @@
                             if (arr[i] % 2 == 0) even++;
                             else odd++;
 
-                            if (arr[i]>max)
+                            if (arr[i] > max)
                             {
                                 secondMax = max;
                                 max = arr[i];
@@ -288,20 +288,20 @@
                         }
                         break;
                     case 2:
-                            Console.WriteLine($"Sum of all element of array = {sum}");
-                            Console.WriteLine();
+                        Console.WriteLine($"Sum of all element of array = {sum}");
+                        Console.WriteLine();
                         break;
                     case 3:
-                            Console.WriteLine($"Count of Odd element= {odd}");
-                            Console.WriteLine($"Count of Odd element= {even}");
-                            Console.WriteLine();
+                        Console.WriteLine($"Count of Odd element= {odd}");
+                        Console.WriteLine($"Count of Odd element= {even}");
+                        Console.WriteLine();
                         break;
                     case 4:
-                            Console.WriteLine($"Second Larest Element = {secondMax}");
-                            Console.WriteLine();
+                        Console.WriteLine($"Second Larest Element = {secondMax}");
+                        Console.WriteLine();
                         break;
                     case 5:
-                            return;
+                        return;
                         break;
                 }
             }
