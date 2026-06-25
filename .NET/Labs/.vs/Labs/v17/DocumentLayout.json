@@ -3,13 +3,16 @@
   "WorkspaceRootPath": "D:\\Sem-5\\.NET\\Labs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C851A7BD-3759-4441-A33F-3683E0290AE0}|..\\Lab-4\\Lab-4.csproj|d:\\sem-5\\.net\\lab-4\\medicalequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1321D3F8-454F-4B77-96CB-5EE77BD216D1}|..\\Lab-5\\Lab-5.csproj|d:\\sem-5\\.net\\lab-5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C851A7BD-3759-4441-A33F-3683E0290AE0}|..\\Lab-4\\Lab-4.csproj|d:\\sem-5\\.net\\lab-4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1321D3F8-454F-4B77-96CB-5EE77BD216D1}|..\\Lab-5\\Lab-5.csproj|d:\\sem-5\\.net\\lab-5\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C851A7BD-3759-4441-A33F-3683E0290AE0}|..\\Lab-4\\Lab-4.csproj|d:\\sem-5\\.net\\lab-4\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1321D3F8-454F-4B77-96CB-5EE77BD216D1}|..\\Lab-5\\Lab-5.csproj|d:\\sem-5\\.net\\lab-5\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1321D3F8-454F-4B77-96CB-5EE77BD216D1}|..\\Lab-5\\Lab-5.csproj|d:\\sem-5\\.net\\lab-5\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,49 +22,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-5\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\Lab-5\\Employee.cs",
+              "ToolTip": "D:\\Sem-5\\.NET\\Lab-5\\Employee.cs",
+              "RelativeToolTip": "..\\Lab-5\\Employee.cs",
+              "ViewState": "AgIAABcAAACAZmZmZmYqwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T07:49:42.349Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MedicalEquipment.cs",
-              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-4\\MedicalEquipment.cs",
-              "RelativeDocumentMoniker": "..\\Lab-4\\MedicalEquipment.cs",
-              "ToolTip": "D:\\Sem-5\\.NET\\Lab-4\\MedicalEquipment.cs",
-              "RelativeToolTip": "..\\Lab-4\\MedicalEquipment.cs",
-              "ViewState": "AgIAAAgAAACgmZmZmZkrwBEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T05:43:39.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "INotificationService.cs",
-              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-4\\INotificationService.cs",
-              "RelativeDocumentMoniker": "..\\Lab-4\\INotificationService.cs",
-              "ToolTip": "D:\\Sem-5\\.NET\\Lab-4\\INotificationService.cs",
-              "RelativeToolTip": "..\\Lab-4\\INotificationService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBUAAAAeAAAAAAAAAA==",
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-5\\Student.cs",
+              "RelativeDocumentMoniker": "..\\Lab-5\\Student.cs",
+              "ToolTip": "D:\\Sem-5\\.NET\\Lab-5\\Student.cs",
+              "RelativeToolTip": "..\\Lab-5\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T05:38:37.681Z",
+              "WhenOpened": "2026-06-24T07:37:47.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-4\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Lab-4\\Program.cs",
-              "ToolTip": "D:\\Sem-5\\.NET\\Lab-4\\Program.cs",
-              "RelativeToolTip": "..\\Lab-4\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAjwDQAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "BankAccount.cs",
+              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-5\\BankAccount.cs",
+              "RelativeDocumentMoniker": "..\\Lab-5\\BankAccount.cs",
+              "ToolTip": "D:\\Sem-5\\.NET\\Lab-5\\BankAccount.cs",
+              "RelativeToolTip": "..\\Lab-5\\BankAccount.cs",
+              "ViewState": "AgIAAA4AAAAAZmZmZmYGwAMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T05:41:29.636Z",
+              "WhenOpened": "2026-06-24T07:20:38.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-5\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Lab-5\\Program.cs",
+              "ToolTip": "D:\\Sem-5\\.NET\\Lab-5\\Program.cs",
+              "RelativeToolTip": "..\\Lab-5\\Program.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T07:09:48.392Z",
               "EditorCaption": ""
             }
           ]
