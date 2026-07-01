@@ -51,7 +51,7 @@ int main() {
     int arrB[SIZEB];
     int arrC[SIZEC];
     
-    if(!(file = fopen("best-1000.txt", "r"))){
+    if(!(file = fopen("../test/best-1000.txt", "r"))){
         printf("ERROR while reading file!!!");
         return 0;
     }
@@ -68,7 +68,7 @@ int main() {
     
 
     
-    if(!(file = fopen("avg-1000.txt", "r"))){
+    if(!(file = fopen("../test/avg-1000.txt", "r"))){
         printf("ERROR while reading file!!!");
         return 0;
     }
@@ -85,7 +85,7 @@ int main() {
     
     
 
-    if(!(file = fopen("worst-1000.txt", "r"))){
+    if(!(file = fopen("../test/worst-1000.txt", "r"))){
         printf("ERROR while reading file!!!");
         return 0;
     }
@@ -104,7 +104,7 @@ int main() {
 
 
     
-    if(!(file = fopen("best-10000.txt", "r"))){
+    if(!(file = fopen("../test/best-10000.txt", "r"))){
         printf("ERROR while reading file!!!");
         return 0;
     }
@@ -121,7 +121,7 @@ int main() {
     
 
     
-    if(!(file = fopen("avg-10000.txt", "r"))){
+    if(!(file = fopen("../test/avg-10000.txt", "r"))){
         printf("ERROR while reading file!!!");
         return 0;
     }
@@ -138,7 +138,7 @@ int main() {
     
     
 
-    if(!(file = fopen("worst-10000.txt", "r"))){
+    if(!(file = fopen("../test/worst-10000.txt", "r"))){
         printf("ERROR while reading file!!!");
         return 0;
     }
@@ -157,7 +157,7 @@ int main() {
 
 
 
-    if(!(file = fopen("best-100000.txt", "r"))){
+    if(!(file = fopen("../test/best-100000.txt", "r"))){
         printf("ERROR while reading file!!!");
         return 0;
     }
@@ -174,7 +174,7 @@ int main() {
     
 
     
-    if(!(file = fopen("avg-100000.txt", "r"))){
+    if(!(file = fopen("../test/avg-100000.txt", "r"))){
         printf("ERROR while reading file!!!");
         return 0;
     }
@@ -191,7 +191,7 @@ int main() {
     
     
 
-    if(!(file = fopen("worst-100000.txt", "r"))){
+    if(!(file = fopen("../test/worst-100000.txt", "r"))){
         printf("ERROR while reading file!!!");
         return 0;
     }
