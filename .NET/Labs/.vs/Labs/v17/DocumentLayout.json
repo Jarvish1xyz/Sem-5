@@ -3,10 +3,13 @@
   "WorkspaceRootPath": "D:\\Sem-5\\.NET\\Labs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8B9B5CA2-F3E5-4FC9-8E71-EB6EC98EBE9A}|..\\Lab-6\\Lab-6.csproj|d:\\sem-5\\.net\\lab-6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14D4CA2E-B0CC-43DB-BF20-9007DA337F8B}|..\\Lab-7 (CRUD)\\Lab-7 (CRUD).csproj|d:\\sem-5\\.net\\lab-7 (crud)\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8B9B5CA2-F3E5-4FC9-8E71-EB6EC98EBE9A}|..\\Lab-6\\Lab-6.csproj|d:\\sem-5\\.net\\lab-6\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14D4CA2E-B0CC-43DB-BF20-9007DA337F8B}|..\\Lab-7 (CRUD)\\Lab-7 (CRUD).csproj|d:\\sem-5\\.net\\lab-7 (crud)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D4CA2E-B0CC-43DB-BF20-9007DA337F8B}|..\\Lab-7 (CRUD)\\Lab-7 (CRUD).csproj|d:\\sem-5\\.net\\lab-7 (crud)\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,7 +19,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,27 +28,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-6\\CartItem.cs",
-              "RelativeDocumentMoniker": "..\\Lab-6\\CartItem.cs",
-              "ToolTip": "D:\\Sem-5\\.NET\\Lab-6\\CartItem.cs",
-              "RelativeToolTip": "..\\Lab-6\\CartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABIAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-7 (CRUD)\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Lab-7 (CRUD)\\Program.cs",
+              "ToolTip": "D:\\Sem-5\\.NET\\Lab-7 (CRUD)\\Program.cs",
+              "RelativeToolTip": "..\\Lab-7 (CRUD)\\Program.cs",
+              "ViewState": "AgIAAA4AAAAANDMzMzPzvxgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T07:48:55.187Z",
+              "WhenOpened": "2026-07-08T07:56:33.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-7 (CRUD)\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "..\\Lab-7 (CRUD)\\Models\\Student.cs",
+              "ToolTip": "D:\\Sem-5\\.NET\\Lab-7 (CRUD)\\Models\\Student.cs",
+              "RelativeToolTip": "..\\Lab-7 (CRUD)\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T07:52:53.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-6\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Lab-6\\Program.cs",
-              "ToolTip": "D:\\Sem-5\\.NET\\Lab-6\\Program.cs",
-              "RelativeToolTip": "..\\Lab-6\\Program.cs",
-              "ViewState": "AgIAAJ8AAAAAamZmZmYSwLUAAABVAAAAAAAAAA==",
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Sem-5\\.NET\\Lab-7 (CRUD)\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "..\\Lab-7 (CRUD)\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Sem-5\\.NET\\Lab-7 (CRUD)\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "..\\Lab-7 (CRUD)\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAABAAAAAA//////8TwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T07:20:50.087Z",
+              "WhenOpened": "2026-07-08T07:51:48.373Z",
               "EditorCaption": ""
             }
           ]
