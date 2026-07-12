@@ -61,6 +61,7 @@ int main() {
             if(adj[k][i]==1 && visited[i]==0) {
                 push(i);
                 visited[i]=1;
+                
             }
         }
     }
