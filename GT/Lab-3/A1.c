@@ -4,32 +4,6 @@
 int stack[Size];
 int top = -1;
 
-// dfs(star){
-//     if visit[start]==0
-//         vis++;
-
-        
-// loop
-//         if adj[start][i]==1 && visited[i]==0
-//         dfs(i)
-//         true
-
-// }
-
-// in()
-// {
-//     int V = 5;
-//     adj[]
-//     int visited[V];
-//     str=0
-
-//     dfs(str);
-    
-
-//     return 0;
-// }
-
-
 void push(int n) {
     stack[++top]=n;
 }
