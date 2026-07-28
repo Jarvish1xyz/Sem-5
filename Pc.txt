@@ -1,0 +1,48 @@
+Case Study Presentation: Ransomware Attack on a Healthcare Organization
+
+Good morning everyone.
+
+Today, I am going to present a case study on "A Ransomware Attack on a Healthcare Organization."
+
+First, let us understand what ransomware is.
+
+Ransomware is a type of malicious software that encrypts a victim's files or systems and demands a ransom payment in exchange for restoring access. It is one of the most dangerous cyber threats because it can completely disrupt an organization's operations.
+
+Problem Statement
+
+In this case, a healthcare organization has suffered a ransomware attack. As a result, important patient records, medical reports, and hospital data have been encrypted. Doctors and staff cannot access critical information, affecting patient care and daily hospital operations.
+
+Possible Causes
+
+There are several reasons why such an attack may occur:
+
+- An employee accidentally opened a phishing email or clicked a malicious link.
+- The organization used weak passwords or did not enable multi-factor authentication.
+- Some systems were outdated and had unpatched security vulnerabilities.
+- The organization lacked proper cybersecurity awareness and secure backup practices.
+
+Impact of the Attack
+
+This attack can have serious consequences:
+
+- Medical services may be delayed because doctors cannot access patient records.
+- The organization may suffer financial losses due to downtime and recovery costs.
+- Sensitive patient information may be exposed.
+- Most importantly, the trust and reputation of the healthcare organization may be damaged.
+
+Recommended Solution
+
+To respond effectively, the organization should:
+
+1. Immediately disconnect infected systems from the network to stop the ransomware from spreading.
+2. Identify the affected devices and investigate the source of the attack.
+3. Avoid paying the ransom, because there is no guarantee that the attackers will restore the data.
+4. Recover the encrypted files using secure offline backups after ensuring the systems are clean.
+5. Report the incident to the appropriate cybersecurity authorities and inform affected users if required.
+6. Strengthen future security by updating software regularly, enabling multi-factor authentication, training employees to identify phishing attacks, and maintaining regular backups.
+
+Conclusion
+
+To conclude, ransomware attacks can cause severe disruption, especially in healthcare, where timely access to patient information is critical. The best defense is not paying the ransom, but preparing in advance through strong cybersecurity practices, regular backups, employee awareness, and an effective incident response plan.
+
+Thank you. I am happy to answer any questions.
