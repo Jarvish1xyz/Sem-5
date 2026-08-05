@@ -78,7 +78,7 @@ int main()
 
     for(int i=0; i<V; i++) {
         for(int j=0; i<V; j++) {
-            fi(adj[i][j]==1) {
+            if(adj[i][j]==1) {
                 for(int k=0; k<V-1; k++) {
                     if(Branch[k][0]==i && Branch[k][1]==j)
                 }
