@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sorting Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #09090b;
+        }
+        .handwritten {
+            font-family: 'Architects Daughter', cursive;
+        }
+        .bar-transition {
+            transition: height 0.3s ease, background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="text-zinc-100 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <main class="w-full max-w-4xl space-y-8">
+        <!-- Header Section -->
+        <header class="text-center space-y-2">
+            <h1 class="text-3xl font-bold tracking-tight text-white">Sorting Visualizer</h1>
+            <p class="text-zinc-400">Interactive demonstration of sorting algorithms.</p>
+        </header>
+
+        <!-- Main Card -->
+        <section class="bg-zinc-900 border border-zinc-800 rounded-xl p-8 shadow-2xl">
+            
+            <!-- Wireframe Reference Display -->
+            <div class="mb-10 flex flex-col md:flex-row items-center justify-center gap-4 border-b border-zinc-800 pb-8">
+                <span class="handwritten text-2xl text-zinc-400">Sort this array:</span>
+                <div id="array-text-display" class="handwritten text-3xl text-indigo-400 tracking-wider">
+                    35, 60, 20, 45, 15, 50, 30, 40, 25, 55
+                </div>
+            </div>
+
+            <!-- Visualization Area -->
+            <div id="visualizer-container" class="h-64 flex items-end justify-center gap-2 mb-8 px-4">
+                <!-- Bars will be injected here by JavaScript -->
+            </div>
+
+            <!-- Controls -->
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <button id="btn-sort" class="inline-flex items-center justify-center px-6 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg transition-all active:scale-95 shadow-lg shadow-indigo-500/20">
+                    <i data-lucide="play" class="w-4 h-4 mr-2"></i>
+                    Start Sorting
+                </button>
+                
+                <button id="btn-shuffle" class="inline-flex items-center justify-center px-6 py-2.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-semibold rounded-lg border border-zinc-700 transition-all active:scale-95">
+                    <i data-lucide="refresh-cw" class="w-4 h-4 mr-2"></i>
+                    Shuffle
+                </button>
+
+                <div class="h-8 w-px bg-zinc-800 mx-2 hidden sm:block"></div>
+
+                <div class="flex items-center gap-3 bg-zinc-950 px-4 py-2 rounded-lg border border-zinc-800">
+                    <label for="speed" class="text-xs font-medium text-zinc-500 uppercase tracking-wider">Speed</label>
+                    <input type="range" id="speed" min="50" max="1000" value="400" class="accent-indigo-500 w-24 cursor-pointer">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Info -->
+        <footer class="flex justify-between items-center text-zinc-500 text-sm px-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-3 h-3 bg-indigo-500 rounded-sm"></span>
+                <span>Unsorted</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-3 h-3 bg-emerald-500 rounded-sm"></span>
+                <span>Sorted</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-3 h-3 bg-rose-500 rounded-sm"></span>
+                <span>Comparing</span>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        const initialArray = [35, 60, 20, 45, 15, 50, 30, 40, 25, 55];
+        let currentArray = [...initialArray];
+        let isSorting = false;
+
+        const container = document.getElementById('visualizer-container');
+        const textDisplay = document.getElementById('array-text-display');
+        const btnSort = document.getElementById('btn-sort');
+        const btnShuffle = document.getElementById('btn-shuffle');
+        const speedInput = document.getElementById('speed');
+
+        function renderBars(comparingIndices = [], sortedIndices = []) {
+            container.innerHTML = '';
+            currentArray.forEach((value, idx) => {
+                const bar = document.createElement('div');
+                bar.style.height = `${(value / 65) * 100}%`;
+                bar.className = 'w-full max-w-[40px] rounded-t-md bar-transition relative group';
+                
+                // Color logic
+                if (comparingIndices.includes(idx)) {
+                    bar.classList.add('bg-rose-500');
+                } else if (sortedIndices.includes(idx)) {
+                    bar.classList.add('bg-emerald-500');
+                } else {
+                    bar.classList.add('bg-indigo-500/80');
+                }
+
+                // Value label
+                const label = document.createElement('span');
+                label.innerText = value;
+                label.className = 'absolute -top-8 left-1/2 -translate-x-1/2 text-xs font-bold text-zinc-400 group-hover:text-white';
+                bar.appendChild(label);
+
+                container.appendChild(bar);
+            });
+            
+            textDisplay.innerText = currentArray.join(', ');
+        }
+
+        async function bubbleSort() {
+            isSorting = true;
+            btnSort.disabled = true;
+            btnSort.classList.add('opacity-50', 'cursor-not-allowed');
+            
+            let n = currentArray.length;
+            let sortedIndices = [];
+
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n - i - 1; j++) {
+                    if (!isSorting) return; // Allow interrupt if needed
+
+                    renderBars([j, j + 1], sortedIndices);
+                    await new Promise(r => setTimeout(r, 1100 - speedInput.value));
+
+                    if (currentArray[j] > currentArray[j + 1]) {
+                        [currentArray[j], currentArray[j + 1]] = [currentArray[j + 1], currentArray[j]];
+                        renderBars([j, j + 1], sortedIndices);
+                    }
+                }
+                sortedIndices.push(n - i - 1);
+            }
+            
+            renderBars([], Array.from({length: n}, (_, i) => i));
+            isSorting = false;
+            btnSort.disabled = false;
+            btnSort.classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+
+        function shuffle() {
+            if (isSorting) {
+                isSorting = false; // Stop current sort
+                setTimeout(shuffle, 100);
+                return;
+            }
+            currentArray = [...initialArray].sort(() => Math.random() - 0.5);
+            renderBars();
+        }
+
+        btnSort.addEventListener('click', () => {
+            if (!isSorting) bubbleSort();
+        });
+
+        btnShuffle.addEventListener('click', shuffle);
+
+        // Initial Render
+        renderBars();
+    </script>
+</body>
+</html>
