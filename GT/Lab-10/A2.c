@@ -196,6 +196,69 @@ void findMaximumMatching()
     }
 }
 
+void findPerfectMatching() {
+    int i, j, e;
+    int index;
+    int edgeIndex;
+    int start, end;
+    int freq[V];
+    int maximal;
+    int count=0;
+
+    for(i=0; i<p; i++) {
+        maximal=1;
+        int c=0;
+        for(e=0; e<V; e++) {
+            freq[e]=0;
+        }
+        for(j=0; j<E;j++) {
+            if(combinations[arr[i]][j]!=-1) {
+                start = edges[combinations[arr[i]][j]][0];
+                end = edges[combinations[arr[i]][j]][1];
+                
+                freq[start]++;
+                freq[end]++;
+                c++;
+            }
+        }
+        if(c>count) count=c;
+        for(int k=0; k<E; k++) {
+            start = edges[k][0];
+            end = edges[k][1];
+
+            if(freq[start]==0 && freq[end]==0) {
+                maximal=0;
+                break;
+            }
+        }
+    }
+    for(int i=0; i<p; i++) {
+        int tempc=0;
+        for(e=0; e<V; e++) {
+            freq[e]=0;
+        }
+        for(int j=0; j<E; j++) {
+            if(combinations[arr[i]][j]!=-1) {
+                start = edges[combinations[arr[i]][j]][0];
+                end = edges[combinations[arr[i]][j]][1];
+                
+                freq[start]++;
+                freq[end]++;
+                tempc++;
+            }
+        }
+        if(tempc==count) {
+            tempc=0;
+            for(int i=0; i<V; i++) {
+                if(freq[i]>0) {
+                    tempc++;
+                }
+            }
+            if(tempc==V) printMatching(arr[i]);
+        }
+    }
+}
+
 void main()
 {
     findMatching();
@@ -205,4 +268,7 @@ void main()
     printf("\n");
     printf("\n");
     findMaximumMatching();
+    printf("\n");
+    printf("\n");
+    findPerfectMatching();
 }
