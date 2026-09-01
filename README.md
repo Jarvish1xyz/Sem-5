@@ -1,8 +1,8 @@
 https://chatgpt.com/share/6a965e2f-69f4-83ea-ba91-a2f9fd1521e9
 
 # table
---> Requirement	                    Recommended
---> Map UI	                        react-native-maps
+### Requirement	                    Recommended
+### Map UI	                        react-native-maps
 Map data	                      OpenStreetMap
 Routing	                        OSRM or openrouteservice
 Geocoding/search	              Nominatim initially
